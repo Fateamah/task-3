@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 249, 249);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+h1 {
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.desserts-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex: 2;
+}
+
+.dessert-item {
+    background-color: none;
+    border-radius: 10px;
+    box-shadow: 0;
+    padding: 10px;
+    text-align: left;
+}
+
+.dessert-item img {
+    width: 90%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.dessert-item h2 {
+    font-size: 13px;
+    margin: 0px 0;
+
+}
+
+.dessert-item p {
+    font-size: 12px;
+    margin: 5px 0;
+    color: #ae2806;
+    font-weight: bold;
+}
+#nickname {
+    color: #5b4741;
+    font-weight: 200;
+    font-size: 11px;
+}
+
+.dessert-item button {
+    width: 200px;
+    border-radius: 30px;
+    height: 45px;
+    background-color: white;
+    border: .5px solid rosybrown;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    bottom: 20px;
+    top: -30px;
+    margin-left: -8%;
+    margin-right: 10%;
+}
+
+svg{
+    padding-right: 6px;
+    position: relative;
+    top: 3px;
+}
+
+.cart {
+    flex: 1;
+    background-color: #fff;
+    padding-left: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    max-height: 300px;
+    width: 100%;
+    
+}
+
+.cart h2 {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: hsl(14, 86%, 42%);
+}
+
+.cartt{
+    padding-top: 20px;
+}
+#added {
+    color: #5b4741;
+    font-size: 14px;
+}
+/* mobile screen */
+@media (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+    .desserts-menu {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px;
+    }
+    .cart {
+        flex: none;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-left: 20px;
+        max-height: 320px;
+        width: 30%;
+        
+    }
+    .dessert-item img {
+        height: 75%;
+    }
+    .dessert-item button {
+        background-color: white;
+        color: black;
+        border-color: rosybrown;
+        padding-bottom: 0px;
+        border-radius: 25px;
+        cursor: pointer;
+        width: 200px;
+        margin-left: 25%;
+        font-size: 15px;
+        font-weight: bold;
+        position: relative;
+        bottom: 25px;
+        padding: 10px;
+    }
+    
+    svg{
+        padding-right: 6px;
+        position: relative;
+        top: 3px;
+        font-size: 25px;
+        
+    }
+    .dessert-item h2 {
+        font-size: 20px;
+        margin: 0px 0;
+    
+    }
+    
+    .dessert-item p {
+        font-size: 18px;
+        margin: 5px 0;
+        color: #ae2806;
+        font-weight: bold;
+    }
+    #nickname {
+        color: #5b4741;
+        font-weight: 200;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }   
+}
